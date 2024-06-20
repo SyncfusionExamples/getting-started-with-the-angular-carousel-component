@@ -1,0 +1,9 @@
+<div class="container">
+  <ejs-carousel [dataSource]="birdsList">
+    <ng-template #itemTemplate let-data>
+      <figure class="img-container">
+        <img [src]="getImage(data.imageName)" alt="data.Name" style="height:100%;width:100%;" />
+      </figure>
+    </ng-template>
+  </ejs-carousel>
+</div>
